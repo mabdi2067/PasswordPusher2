@@ -11,7 +11,6 @@ resources:
 stages:
 - stage: Provision
   displayName: 'Deploying required resources to Azure'
-  dependsOn: Build
   jobs: 
   - job: Provision
     displayName: 'Provisioning Container Instancec'
