@@ -58,7 +58,7 @@ resource "azurerm_app_service" "webapp" {
   app_service_plan_id = azurerm_app_service_plan.ASP-Abdi.id
 
 site_config {
-    linux_fx_version = "mabdi23/pwpush"
+    linux_fx_version = "DOCKER|mabdi23/pwpush:latest"
     always_on        = "true"
   }
 }
